@@ -116,3 +116,159 @@
   121  cd server-docker
   122  cd ignore
   123  history > server-history.txt
+    1  sudo apt update
+    2  docker pull stremio/server
+    3  sudo docker pull stremio/server
+    4  ls
+    5  cd ../
+    6  ls
+    7  cd 
+    8  ls -la
+    9  sudo docker ps
+   10  docker run --name stremio -d stremio/server
+   11  sudo docker run --name stremio -d stremio/server
+   12  docker images
+   13  sudo docker images
+   14  sudo docker ps
+   15  node server.js bash
+   16  sudo docker exec -i 2a1ab706ac1f /bin/bash
+   17  sudo docker exec -i 2a1ab706ac1f
+   18  sudo docker exec -i 2a1ab706ac1f /bin/bash
+   19  sudo docker exec -d 2a1ab706ac1f nano README.MD
+   20  docker ps
+   21  sudo docker ps
+   22  docker stop 2a1ab706ac1f
+   23  sudo docker stop 2a1ab706ac1f
+   24  sudo docker kill 2a1ab706ac1f
+   25  sudo docker rm 2a1ab706ac1f
+   26  docker ps
+   27  sudo docker ps
+   28  docker run --rm -d -p 11470:11470 -p 12470:12470 -e NO_CORS=1 stremio/server:latest
+   29  sudo docker run --rm -d -p 11470:11470 -p 12470:12470 -e NO_CORS=1 stremio/server:latest
+   30  sudo nano /etc/systemd/logind.conf
+   31  sudo systemctl restart systemd-logind
+   32  reboot
+   33  sudo reboot
+   34  sudo docker run --rm -d -p 11470:11470 -p 12470:12470 -e NO_CORS=1 stremio/server:latest
+   35  sudo docker ps
+   36  sudo reboot
+   37  sudo docker ps
+   38  docker run --rm -d -p 11470:11470 -p 12470:12470 stremio/server:latest
+   39  sudo docker run --rm -d -p 11470:11470 -p 12470:12470 stremio/server:latest
+   40  sudo docker ps
+   41  sudo docker stop b643b66fdbdb
+   42  sudo docker ps
+   43  sudo apt update
+   44  sudo apt upgrade
+   45  sudo docker ps
+   46  docker run --rm -d -p 11470:11470 -p 12470:12470 -e NO_CORS=1 stremio/server:latest
+   47  sudo docker run --rm -d -p 11470:11470 -p 12470:12470 -e NO_CORS=1 stremio/server:latest
+   48  sudo docker ps
+   49  clear
+   50  sudo docker ps
+   51  sudo docker stop tender_shockley
+   52  sudo docker ps
+   53  sudo docker run --rm -d -p 11470:11470 -p 13470:12470 --name stremio stremio/server:latest
+   54  sudo docker stop tender_shockley
+   55  sudo docker stop stremio
+   56  sudo docker run --rm -d -p 11470:11470 -p 13470:12470 --name stremio stremio/server:latest
+   57  sudo docker stop stremio
+   58  sudo docker run --rm -p 11470:11470 -p 13470:12470 --name stremio stremio/server:latest
+   59  sudo docker ps
+   60  sudo docker stop stremio
+   61  sudo docker run --rm -p 11470:11470 -p 13470:12470 --name stremio stremio/server:latest
+   62  sudo docker stop stremio
+   63  sudo docker run --rm -d -p 11470:11470 -p 12470:12470 --name stremio stremio/server:latest
+   64  ls
+   65  cd ../
+   66  cd ;;/
+   67  cd ../
+   68  ls
+   69  cd ../
+   70  ls
+   71  cd
+   72  cd /
+   73  ls
+   74  cd
+   75  sudo docker ps
+   76  sudo docker stop stremio
+   77  s
+   78  sudo docker ps
+   79  sudo ufw allow 12470
+   80  sudo docker logs stremio
+   81  sudo apt install nginx
+   82  sudo apt purge nginx nginx-common nginx-core
+   83  sudo apt autoremove
+   84  sudo docker stop stremio
+   85  sudo reboot
+   86  sudo docker ps
+   87  sudo docker restart stremio
+   88  docker exec -it stremio bash
+   89  sudo docker exec -it stremio bash
+   90  cd /var
+   91  cd docker
+   92  ls
+   93  cd lib
+   94  cd docker
+   95  sudo cd docker
+   96  ls
+   97  sudo cd docker -s
+   98  sudo cd docker -S
+   99  sudo -S cd docker 
+  100  sudo -s cd docker 
+  101  ls
+  102  cd dhcp
+  103  ls
+  104  ls -la
+  105  ls la
+  106  cd 
+  107  sudo docker ps
+  108  sudo docker run -d --rm -p 11470:11470 -p 13470:12470 --name stremio stremio/server:latest
+  109  docker exec -it stremio bash
+  110  sudo docker exec -it stremio bash
+  111  sudo docker ps
+  112  sudo docker restar stremio
+  113  sudo docker restart stremio
+  114  sudo docker log stremio
+  115  docker --help
+  116  sudo docker logs stremio
+  117  exit
+  118  sudo -s
+  119  exit
+  120  sudo passwd root
+  121  nano /etc/ssh/sshd_config
+  122  exit
+  123  nano /etc/ssh/sshd_config
+  124  -su
+  125  sudo -su
+  126  sudo su
+  127  exit
+  128  nano /etc/ssh/sshd_config
+  129  sudo nano /etc/ssh/sshd_config
+  130  sudo systemctl restart ssh
+  131  exit
+  132  sudo docker run -d -p 11470:11470 -p 12470:12470 -e NO-CORS=1 --name stremio stremio/server:latest
+  133  sudo docker exec -it stremio bash
+  134  sudo docker restart stremio
+  135  exit
+  136  sudo docker exec -it stremio bash
+  137  exit
+  138  ls
+  139  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  140  clear
+  141  exit
+  142  la
+  143  ls -1
+  144  ls -a
+  145  cd .
+  146  cd ../
+  147  ls
+  148  exit
+  149  ls -a
+  150  sudo docker exec -it stremio bash
+  151  ls
+  152  git clone https://github.com/Stremio/stremio-service/issues/39
+  153  git clone https://github.com/FelipeOtz/server-docker.git
+  154  cd server-docker
+  155  cd ignore
+  156  history >> server-history.txt
