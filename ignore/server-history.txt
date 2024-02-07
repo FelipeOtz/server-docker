@@ -1,0 +1,123 @@
+    1  ls
+    2  exit
+    3  cd /
+    4  sudo passwd root
+    5  exit
+    6  docker ps -a
+    7  exit
+    8  curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
+    9  ngrok config add-authtoken 2ZxDDDG8zWuUJ0T0JOgoq15HiJk_72ond5d4Xj4gPggbHGz19
+   10  ngrok https 12470
+   11  ngrok http 12470
+   12  ngrok http 11470
+   13  ngrok http 12470
+   14  ngrok http https://12470
+   15  ngrok http https://localhost:12470
+   16  exit
+   17  ngrok http https://app.strem.io/shell-v4.4/?streamingServer=https%3A%2F%2F192.168.0.175%3A12470#/settings
+   18  ngrok http https://192.168.0.175:12470
+   19  exit
+   20  docker exec -it stremio bash
+   21  exit
+   22  ngrok http https://localhost:12470
+   23  ls
+   24  ngrok http :80
+   25  ngrok http --domain=present-eager-bream.ngrok-free.app felipe-server.local:80
+   26  curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb &&  sudo dpkg -i cloudflared.deb &&  sudo cloudflared service install eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiNzY0NmVhMjAtZDZmZS00MWIxLWI1NmYtNzg2MmM3MmI4OGYyIiwicyI6Ik5UazRNR1k0WldJdE9XVTFPUzAwTjJabUxXSmxZbVl0TXpnMU56TXlOakV5TURKbCJ9
+   27  ps
+   28  ps aux
+   29  ps aux | grep cloud
+   30  ps aux | grep cloudflare
+   31  ps aux | grep cloudflare --color=green
+   32  ps aux | grep cloudflare
+   33  ssh umbrel@umbrel.local
+   34  exit
+   35  sudo mkdir -p --mode=0755 /usr/share/keyrings
+   36  curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
+   37  echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared buster main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
+   38  sudo apt-get update
+   39  sudo apt-get install cloudflared
+   40  cloudflared tunnel login
+   41  sudo cloudflared service install eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiMzgxYjdkNzEtMDFkZC00ODM1LTgxZGItYmQzZDlkZDM4YzE2IiwicyI6Ik56TTFOamM0TlRjdE1EVTBPUzAwWlRNMExUaGtNVGt0TkdRd056Y3paalk0TjJVeiJ9
+   42  cloudflared service uninstall
+   43  sudo cloudflared service install eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiMzgxYjdkNzEtMDFkZC00ODM1LTgxZGItYmQzZDlkZDM4YzE2IiwicyI6Ik56TTFOamM0TlRjdE1EVTBPUzAwWlRNMExUaGtNVGt0TkdRd056Y3paalk0TjJVeiJ9
+   44  cloudflared service uninstall
+   45  ps aux | grep cloudflare
+   46  dcoker ps
+   47  docker ps
+   48  docker ps -a
+   49  docker start stremio
+   50  docker stop stremio
+   51  docker ps -a
+   52  docker start --restart always stremio 
+   53  docker start stremio 
+   54  docker ps -a | grep stre
+   55  cloudflared service uninstall
+   56  sudo cloudflared service uninstall
+   57  deocker ps
+   58  docker ps
+   59  clear
+   60  docker run -d --restart unless-stopped cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiNTBkNTMxMjctOGQ0OC00ZjA3LThjMDMtMjU0ODU4ZDZkZmUxIiwicyI6Ik0yTmhZVEEzTTJVdE9EUTROQzAwWTJReExXRTNZalV0WmpjM00yWTJZV0ZoTUdKayJ9
+   61  ls
+   62  docker networks
+   63  docker --help
+   64  docker network
+   65  docker network ps
+   66  docker network ls
+   67  docker ps
+   68  docker ps | grep cloud
+   69  docker stop 5ddb9c257b77
+   70  docker rm 5ddb9c257b77
+   71  docker ps -a
+   72  docker ps -a | grep cloud
+   73  docker run -d --restart unless-stopped --name cloudflared --network="umbrel_main_network" cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiNTBkNTMxMjctOGQ0OC00ZjA3LThjMDMtMjU0ODU4ZDZkZmUxIiwicyI6Ik0yTmhZVEEzTTJVdE9EUTROQzAwWTJReExXRTNZalV0WmpjM00yWTJZV0ZoTUdKayJ9
+   74  docker stop cloudflared
+   75  docker rm cloudflared
+   76  docker images
+   77  docker image rm e8dbbd07fae5
+   78  sudo cloudflared service install eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiMmYyY2JjYmQtNTAwNy00MDVkLWI1YzEtMWNmZjAwYjRmNTI5IiwicyI6Ik1UY3dPREJrT1dJdE9HSXdNUzAwTXpGbExXRTNNMkl0WVdWa1pqWXpNMlkzWTJOaSJ9
+   79  docker stop cloudflared
+   80  cloudflared service uninstall
+   81  cloudflared service install eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiMWM2NGMwMTctMGY3OC00ZjkzLWE2MjAtMmE4M2NiM2VjYTI2IiwicyI6IlpETTRObU5pTUdJdFpUazNOeTAwTVdObExUbG1PV1V0TURSak1XWmxOemRpWWpCaiJ9
+   82  exit
+   83  docker ps -a | grep stremio
+   84  docker start stremio
+   85  exit
+   86  ls
+   87  docker start stremio
+   88  exit
+   89  docker run -d --restart unless-stopped --name cloudflared --network="umbrel_main_network" cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiNTBkNTMxMjctOGQ0OC00ZjA3LThjMDMtMjU0ODU4ZDZkZmUxIiwicyI6Ik0yTmhZVEEzTTJVdE9EUTROQzAwWTJReExXRTNZalV0WmpjM00yWTJZV0ZoTUdKayJ9
+   90  docker ps -a | grep stremio
+   91  docker ps -a | grep CLOUD
+   92  docker ps -a | grep cloud
+   93  docker stop cloudflared
+   94  docker ps -a
+   95  docker ps -a | grep stremio
+   96  docker start stremio
+   97  cloudflared.exe service install eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiMWM2NGMwMTctMGY3OC00ZjkzLWE2MjAtMmE4M2NiM2VjYTI2IiwicyI6IlpETTRObU5pTUdJdFpUazNOeTAwTVdObExUbG1PV1V0TURSak1XWmxOemRpWWpCaiJ9
+   98  sudo cloudflared service install eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiMWM2NGMwMTctMGY3OC00ZjkzLWE2MjAtMmE4M2NiM2VjYTI2IiwicyI6IlpETTRObU5pTUdJdFpUazNOeTAwTVdObExUbG1PV1V0TURSak1XWmxOemRpWWpCaiJ9
+   99  sudo cloudflared service install eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiMWM2NGMwMTctMGY3OC00ZjkzLWE2MjAtMmE4M2NiM2VjYTI2IiwicyI6Ik5UaGxaamMxTlRVdFptVXdNQzAwTldSbExUZzFZemN0WVRaaVlUVTRaV0l3TmpKaCJ9
+  100  cloudflared service uninstall
+  101  sudo cloudflared service install eyJhIjoiZjI1YzlmOTJiNmViNWZjYTdmMTk5ZDk2MDI4NWJkMTkiLCJ0IjoiMWM2NGMwMTctMGY3OC00ZjkzLWE2MjAtMmE4M2NiM2VjYTI2IiwicyI6Ik5UaGxaamMxTlRVdFptVXdNQzAwTldSbExUZzFZemN0WVRaaVlUVTRaV0l3TmpKaCJ9
+  102  ifconfig
+  103  apt install net-tools
+  104  ifconfig
+  105  docker ps -a | greumbrel
+  106  docker ps -a | greup mbrel
+  107  docker ps -a | grep umbrel
+  108  sudo restart
+  109  sudo reboot
+  110  docker start stremio
+  111  ps aux | grep cloudflare
+  112  docker exec -it stremio bash
+  113  ls
+  114  ls -a
+  115  cd ../
+  116  ls
+  117  cd home
+  118  git 
+  119  git clone https://github.com/FelipeOtz/server-docker.git
+  120* ls
+  121  cd server-docker
+  122  cd ignore
+  123  history > server-history.txt
