@@ -1,0 +1,126 @@
+    1  ls
+    2  mkdir ssl
+    3  l-a
+    4  ls -a
+    5  cd ssl
+    6  openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout server.key -out server.crt
+    7  cd ../
+    8  ls
+    9  apt update
+   10  apt install nano
+   11  clear
+   12  nano server.js
+   13  exit
+   14  ls
+   15  nano server.js
+   16  exit
+   17  nano server.js
+   18  exit
+   19  ls
+   20  cd /root
+   21  ls
+   22  ls -a
+   23  cd .stremio-server
+   24  ls
+   25  nano server-settings.json
+   26  exit
+   27  nano server-settings.json
+   28  cd root
+   29  cd /root
+   30  cd .stremio-server
+   31  nano server-settings.json
+   32  exit
+   33  nano README.md
+   34  nano Dockerfile
+   35  cs /
+   36  cd /
+   37  cd etc
+   38  ls
+   39  cd letsencrypt/
+   40  ls
+   41  ls a
+   42  ls -a
+   43  ls keys/
+   44  cd live
+   45  cd etc/
+   46  cd /etc/
+   47  ls -a
+   48  cd ssh
+   49  ls -a
+   50  cd ssh_config
+   51  nano ssh_config
+   52  cd /etc/letsencrypt/
+   53  ls a
+   54  ls -a
+   55  ls accounts
+   56  ls .
+   57  ls ..
+   58  ls csr
+   59  ls renewal
+   60  ls -a renewal
+   61  nano 0000_csr-certbot.pem
+   62  nano csr/0000_csr-certbot.pem
+   63  nano keys/0000_csr-certbot.pem
+   64  ls keys
+   65  nano keys/0000_key-certbot.pem
+   66  nano keys/0000_key-certbot.pem
+   67  cd /
+   68  ls
+   69* 
+   70  ls
+   71  cd /
+   72  cd stremio
+   73  ls
+   74  cd ssl
+   75  ls
+   76  nano server.crt
+   77  exit
+   78  apt-get update
+   79  apt-get install certbot -y
+   80  certbot certonly --standalone -d 192.168.0.175
+   81  certbot certonly --standalone -d 80d5-138-59-136-254.ngrok-free.app
+   82  ls
+   83  nano server-settings.json
+   84  nano server.js
+   85  nano server.js
+   86  nano server.js
+   87  nano server.js
+   88  exit
+   89  nano server.js
+   90  nano server.js
+   91  exit
+   92  exit
+   93  nano server.js
+   94  exit
+   95  certbot certonly --standalone -d felipe-server
+   96  certbot certonly --standalone -d *.felipe-server
+   97  nano server.js
+   98  exit
+   99  history
+  100  ls
+  101  cd .
+  102* ls 
+  103  cd ../
+  104  ls
+  105  history
+  106  ls
+  107  cd home
+  108  ls
+  109  history > my_hist
+  110  ls
+  111  rm my_hist
+  112  rm my_hist
+  113  ls
+  114  history > my_hist.txt
+  115  nano my_hi
+  116  nano my_hist
+  117  nano my_hist.txt
+  118  git
+  119  git clone
+  120  git clone https://github.com/FelipeOtz/server-docker.git
+  121  ls
+  122  cd server-docker
+  123  ls
+  124  mkdir ignore
+  125  cd ignore
+  126  history > command_history.txt
