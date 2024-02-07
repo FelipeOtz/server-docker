@@ -116,6 +116,20 @@
   121  cd server-docker
   122  cd ignore
   123  history > server-history.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     1  sudo apt update
     2  docker pull stremio/server
     3  sudo docker pull stremio/server
