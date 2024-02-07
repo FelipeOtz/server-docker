@@ -268,6 +268,10 @@
   136  sudo docker exec -it stremio bash
   137  exit
   138  ls
+
+sudo docker run -d -p 11470:11470 -p 12470:12470 -e NO-CORS=1 --restart unless-stopped --name stremio stremio/server:latest
+
+
   139  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   140  clear
   141  exit
